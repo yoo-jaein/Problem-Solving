@@ -1,4 +1,5 @@
 // 2020-07-30 Yoo Jaein
+// [BOJ] 7568 덩치
 // Brute Force
 
 import java.util.Scanner;

@@ -1,4 +1,5 @@
 // 2020-07-30 Yoo Jaein
+// [BOJ] 2798 블랙잭
 // Brute Force
 
 import java.util.Scanner;

@@ -1,4 +1,5 @@
 // 2020-07-30 Yoo Jaein
+// [BOJ] 2231 분해합
 // Brute Force
 
 import java.util.Scanner;
