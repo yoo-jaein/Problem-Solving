@@ -25,3 +25,8 @@
 
 - [삼성 SW 역량 테스트 기출 문제 (baekjoon)](https://www.acmicpc.net/workbook/view/1152)
 - [SW역량테스트 준비 (baekjoon)](https://www.acmicpc.net/workbook/view/2063)
+
+## 📘 참고도서
+
+- 프로그래밍 대회에서 배우는 알고리즘 문제 해결 전략 1, 2
+- 정보올림피아드 비전서 시리즈 Algorithm I, II, Dynamic Programming
