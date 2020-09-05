@@ -39,6 +39,7 @@ public class Main {
 		}
 		
 		System.out.println(num);
+		br.close();
     	return;
     }
 }

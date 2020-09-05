@@ -33,7 +33,7 @@ public class Main {
 			if(check) answer++;
 		}
 		System.out.println(answer);
-		
+		br.close();
     	return;
     }
 }

@@ -27,7 +27,7 @@ public class Main {
 			System.out.println(sum);
 			System.out.println(min);
 		}
-		
+		br.close();
     	return;
     }
 }

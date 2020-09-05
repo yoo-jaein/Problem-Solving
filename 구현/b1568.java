@@ -1,6 +1,6 @@
 // 2020-09-05 Yoo Jaein
-// [BOJ] 10886 0 = not cute / 1 = cute
-// 수학
+// [BOJ] 1568 새
+// 구현
 
 import java.io.*;
 
@@ -8,18 +8,23 @@ public class Main {
 	
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		
 		int N = Integer.parseInt(br.readLine());
-		int y = 0;
-		int n = 0;
+		int now = N; // 남아있는 새의 수
+		int time = 0; // 초
+		int sing = 1; // 지금 부르는 숫자
 		
-		for(int i=0; i<N; i++) {
-			if(br.readLine().equals("0")) // not cute
-				n++;
-			else
-				y++;
+		while(now>0) {			
+			if(now<sing)
+				sing = 1;
+			
+			now -= sing;
+			
+			time++;
+			sing++;
 		}
+		System.out.println(time);
 		
-		System.out.println(n>y?"Junhee is not cute!":"Junhee is cute!");
 		br.close();
     	return;
     }

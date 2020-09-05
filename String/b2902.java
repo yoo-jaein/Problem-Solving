@@ -1,6 +1,6 @@
 // 2020-09-05 Yoo Jaein
-// [BOJ] 5565 영수증
-// 수학
+// [BOJ] 2902 KMP는 왜 KMP일까?
+// String
 
 import java.io.*;
 
@@ -8,14 +8,15 @@ public class Main {
 	
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		int total = Integer.parseInt(br.readLine());
-		int price = 0;
+		String s = br.readLine();
+		String answer = "";
 		
-		for(int i=0; i<9; i++) {
-			price += Integer.parseInt(br.readLine());
+		for(int i=0; i<s.length(); i++) {
+			if(Character.isUpperCase(s.charAt(i)))
+				answer += s.charAt(i);
 		}
 		
-		System.out.println(total-price);
+		System.out.println(answer);		
 		br.close();
     	return;
     }

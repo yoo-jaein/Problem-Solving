@@ -54,7 +54,7 @@ public class Main {
 		
 		// 범위 (최대값-최소값)
 		System.out.println(arr[arr.length-1]-arr[0]);
-		
+		br.close();
     	return;
     }
 }

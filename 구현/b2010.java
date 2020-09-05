@@ -20,6 +20,7 @@ public class Main {
 		answer++; // 마지막 콘센트
 		System.out.println(answer);
 		
+		br.close();
     	return;
     }
 }
