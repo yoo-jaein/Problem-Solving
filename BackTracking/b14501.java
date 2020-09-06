@@ -1,6 +1,6 @@
 // 2020-08-14 Yoo Jaein
-// [BOJ] 퇴사
-// dfs, Backtracking
+// [BOJ] 14501 퇴사
+// dfs, BackTracking
 
 import java.io.*;
 import java.util.*;
