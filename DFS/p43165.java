@@ -1,39 +1,39 @@
-// 2020-08-28 Yoo Jaein
+// 2020-09-21 Yoo Jaein
 // [PRG] 43165 타겟 넘버
-// DFS/BFS
+// DFS
 
 import java.io.*;
 import java.util.*;
 
 public class Main {
+	static int n;
+	static int target;
+	static int answer;
 	
-	static int[] numbers = {1, 1, 1, 1, 1};
-	static int target = 3;
-	static int answer = 0;
-	
-	public static int dfs(int prev, int index) {
-		if(index>=numbers.length) {
-			if(target == prev)
-				return 1;
-			return 0;
+	public static void dfs(int idx, int num, int[] numbers) {
+		if(idx==n) {
+			if(num==target) {
+				answer++;
+			}
+			return;
 		}
-		int num = prev+numbers[index];
-		int num2 = prev-numbers[index];
 		
-		int answer = 0;
-		answer += dfs(num, index+1);
-		answer += dfs(num2, index+1);
-		
-		return answer;
+		if(idx+1<=n) {
+			dfs(idx+1,num+numbers[idx],numbers);
+			dfs(idx+1,num-numbers[idx],numbers);
+		}
 	}
 	
 	public static void main(String[] args) throws IOException {
-    	
-		int answer = 0;
-		answer += dfs(numbers[0],0);
-		answer += dfs(-numbers[0],0);
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		int[] numbers = {1,1,1,1,1};
+		n = numbers.length;
+		target = 3;
 		
+		dfs(0,0,numbers);
 		System.out.println(answer);
+		
+		br.close();
     	return;
     }
 }
