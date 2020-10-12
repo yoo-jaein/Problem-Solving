@@ -1,6 +1,6 @@
 // 2020-10-06 Yoo Jaein
 // [BOJ] 8911 거북이
-// 구현
+// 시뮬레이션
 
 import java.io.*;
 public class Main {

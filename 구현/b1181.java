@@ -15,14 +15,14 @@ public class Main {
 		// 중복 제거
 		HashSet<String> set = new HashSet<String>();
 		 
-        for(int i=0; i<n; i++) 
-            set.add(br.readLine());
-		
-        // Set -> ArrayList 변환
-        ArrayList<String> list = new ArrayList<>(set);
-        
-        // Comparator compare 오버라이드 
-        Collections.sort(list, new Comparator<String>() {
+		for(int i=0; i<n; i++) 
+		set.add(br.readLine());
+
+		// Set -> ArrayList 변환
+		ArrayList<String> list = new ArrayList<>(set);
+
+		// Comparator compare 오버라이드 
+		Collections.sort(list, new Comparator<String>() {
 			@Override
 			public int compare(String s1, String s2) {
 				if(s1.length()==s2.length())
@@ -31,11 +31,11 @@ public class Main {
 					return s1.length()-s2.length();
 			}
 		});
-		
-        // ArrayList 출력
+
+		// ArrayList 출력
 		for(String s : list)
 			System.out.println(s);
-				
+
 		br.close();
     	return;
     }
