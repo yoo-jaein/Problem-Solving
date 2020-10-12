@@ -25,6 +25,7 @@
 
 - [삼성 SW 역량 테스트 기출 문제 (baekjoon)](https://www.acmicpc.net/workbook/view/1152)
 - [SW역량테스트 준비 (baekjoon)](https://www.acmicpc.net/workbook/view/2063)
+- [모의 SW 역량 테스트 (swea)](https://swexpertacademy.com/main/userpage/code/userProblemBoxDetail.do?probBoxId=AV5Po0AqAPwDFAUq&leftPage=1&curPage=userpage&userId=SWEAC)
 
 ## 📘 참고도서
 
